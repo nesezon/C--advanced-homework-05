@@ -1,4 +1,4 @@
--- create database MyDatabase
+п»ї-- create database MyDatabase
 CREATE DATABASE [MyDatabase]
 GO
  
@@ -22,9 +22,9 @@ CREATE TABLE [MyDatabase].[dbo].[MyTable] (
 
 -- insert data into the table
 INSERT [MyDatabase].[dbo].[MyTable] ([FirstName], [LastName], [Age])
-VALUES ('Иван', 'Иванов', 21),
-       ('Андрей', 'Андреев', 48),
-       ('Петр', 'Петров', 76),
-       ('Алекс', 'Алексеев', 54),
-       ('Егор', 'Егоров', 22),
-       ('Степан', 'Степанов', 37)
+VALUES ('РРІР°РЅ', 'РРІР°РЅРѕРІ', 21),
+       ('РђРЅРґСЂРµР№', 'РђРЅРґСЂРµРµРІ', 48),
+       ('РџРµС‚СЂ', 'РџРµС‚СЂРѕРІ', 76),
+       ('РђР»РµРєСЃ', 'РђР»РµРєСЃРµРµРІ', 54),
+       ('Р•РіРѕСЂ', 'Р•РіРѕСЂРѕРІ', 22),
+       ('РЎС‚РµРїР°РЅ', 'РЎС‚РµРїР°РЅРѕРІ', 37)
