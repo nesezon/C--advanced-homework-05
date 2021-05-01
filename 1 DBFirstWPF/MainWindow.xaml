@@ -4,6 +4,23 @@
         Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
         Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
     <Grid>
-        
+      <DataGrid
+                AutoGenerateColumns="False"
+                ItemsSource="{Binding}">
+        <DataGrid.Columns>
+          <DataGridTextColumn
+            Width="100"
+            Binding="{Binding FirstName}"
+            Header="FirstName" />
+          <DataGridTextColumn
+            Width="100"
+            Binding="{Binding LastName}"
+            Header="LastName" />
+          <DataGridTextColumn
+            Width="100"
+            Binding="{Binding Age}"
+            Header="Age" />
+        </DataGrid.Columns>
+      </DataGrid>
     </Grid>
 </Window>
