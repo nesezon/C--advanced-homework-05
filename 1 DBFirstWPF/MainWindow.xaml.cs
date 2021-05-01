@@ -1,22 +1,23 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System;
 using System.Windows;
+using System.Data.Entity;
+using System.Linq;
 using DBFirstWPF.EntityFramework;
 
 namespace DBFirstWPF {
-  public static class CollectionUtility {
-    public static ObservableCollection<T> ToObservableCollection<T>(this IEnumerable<T> enumeration) {
-      return new ObservableCollection<T>(enumeration);
-    }
-  }
-  public partial class MainWindow : Window {
-    readonly Entities entities = new Entities();
-    readonly ObservableCollection<MyTable> dbdatas;
-
+  public partial class MainWindow {
     public MainWindow() {
       InitializeComponent();
-      dbdatas = entities.MyTable.ToObservableCollection();
-      DataContext = dbdatas;
+    }
+
+    private void Load_Click(object sender, RoutedEventArgs e) {
+      try {
+        Entities entities = new Entities();
+        DataContext = entities.MyTable.ToList();
+        entities.MyTable.Load();
+      } catch (Exception ex) {
+        MessageBox.Show(ex.Message, "Ошибка обращения к БД");
+      }
     }
   }
 }

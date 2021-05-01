@@ -13,8 +13,7 @@ namespace DBFirstWPF.EntityFramework {
   using System.Data.Entity.Infrastructure;
 
   public partial class Entities : DbContext {
-    public Entities()
-        : base("name=Entities") {
+    public Entities() : base("name=Entities") {
     }
 
     protected override void OnModelCreating(DbModelBuilder modelBuilder) {
