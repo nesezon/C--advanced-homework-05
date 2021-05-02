@@ -6,7 +6,7 @@ C# Advanced. Homework 05. Task 2
 
  > Не удается использовать выражение типа 'System.Data.Entity.Core.Metadata.Edm.EdmItemCollection' для типа возвращаемого значения 'System.Data.Entity.Core.Metadata.Edm.EdmItemCollection'
 
->Expression of type 'System.Data.Entity.Core.Metadata.Edm.EdmItemCollection' cannot be used for return type 'System.Data.Entity.Core.Metadata.Edm.EdmItemCollection').
+>Expression of type 'System.Data.Entity.Core.Metadata.Edm.EdmItemCollection' cannot be used for return type 'System.Data.Entity.Core.Metadata.Edm.EdmItemCollection'.
 
 Получилось исправить - сделал сначала "Обновить модель из базы данных".
 Потом закрыл Visual Studio. Открыл и снова сделал "Сформировать базу на основе модели..."
