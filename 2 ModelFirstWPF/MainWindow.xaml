@@ -3,7 +3,28 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen"
         Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
-    <Grid>
-        
-    </Grid>
+  <Grid>
+    <Button Content="Load" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="2,1,0,0" Click="Load_Click"/>
+    <DataGrid  Margin="82,0,0,0"
+                 IsReadOnly="True"
+                 AutoGenerateColumns="False"
+                 AlternatingRowBackground="Lavender"
+                 BorderThickness="0"
+                 ItemsSource="{Binding}">
+      <DataGrid.Columns>
+        <DataGridTextColumn
+            Width="100"
+            Binding="{Binding FirstName}"
+            Header="FirstName" />
+        <DataGridTextColumn
+            Width="100"
+            Binding="{Binding LastName}"
+            Header="LastName" />
+        <DataGridTextColumn
+            Width="100"
+            Binding="{Binding Age}"
+            Header="Age" />
+      </DataGrid.Columns>
+    </DataGrid>
+  </Grid>
 </Window>
