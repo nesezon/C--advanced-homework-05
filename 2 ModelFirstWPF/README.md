@@ -4,7 +4,7 @@ C# Advanced. Homework 05. Task 2
 После cоздания модели выполнил "Сформировать базу на основе модели...". Пустая база данных создалась успешно.
 При генерации скриптов таблицы получил ошибку:
 
- > Не удается использовать выражение типа System.Data.Entity.Core.Metadata.Edm.EdmItemCollection для типа возвращаемого значения
+ > Не удается использовать выражение типа 'System.Data.Entity.Core.Metadata.Edm.EdmItemCollection' для типа возвращаемого значения 'System.Data.Entity.Core.Metadata.Edm.EdmItemCollection'
 
 >Expression of type 'System.Data.Entity.Core.Metadata.Edm.EdmItemCollection' cannot be used for return type 'System.Data.Entity.Core.Metadata.Edm.EdmItemCollection').
 
