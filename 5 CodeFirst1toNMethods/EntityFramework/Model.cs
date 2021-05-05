@@ -1,28 +1,32 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
 
 namespace CodeFirst1toNMethods.EntityFramework {
   public class Model : DbContext {
-    // Контекст настроен для использования строки подключения "Model" из файла конфигурации  
-    // приложения (App.config или Web.config). По умолчанию эта строка подключения указывает на базу данных 
-    // "CodeFirst1toNMethods.EntityFramework.Model" в экземпляре LocalDb. 
-    // 
-    // Если требуется выбрать другую базу данных или поставщик базы данных, измените строку подключения "Model" 
-    // в файле конфигурации приложения.
-    public Model()
-        : base("name=Model") {
-    }
+    public Model() : base("name=Model") { }
 
-    // Добавьте DbSet для каждого типа сущности, который требуется включить в модель. Дополнительные сведения 
-    // о настройке и использовании модели Code First см. в статье http://go.microsoft.com/fwlink/?LinkId=390109.
-
-    // public virtual DbSet<MyEntity> MyEntities { get; set; }
+    public virtual DbSet<Measure> Measures { get; set; }
+    public virtual DbSet<Day> Days { get; set; }
   }
 
-  //public class MyEntity
-  //{
-  //    public int Id { get; set; }
-  //    public string Name { get; set; }
-  //}
+  public class Measure {
+    public int Id { get; set; }
+    public int Hour { get; set; }
+    public int Temperature { get; set; }
+    public int? DayId { get; set; }
+    public Day Day { get; set; }
+  }
+  public class Day {
+    public int Id { get; set; }
+    public int Date { get; set; }
+    public int? MaxTemperature { get; set; }
+    public int? MinTemperature { get; set; }
+    public int? MeasureCount { get; set; }
+    public double? AvgTemperature { get; set; }
+    public bool? IsBelowZero { get; set; }
+    public ICollection<Measure> Measures { get; set; }
+    public Day() {
+      Measures = new List<Measure>();
+    }
+  }
 }
