@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4 CodeFirstNtoN", "4 CodeFi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5 CodeFirst1toNMethods", "5 CodeFirst1toNMethods\5 CodeFirst1toNMethods.csproj", "{CA6E42E1-F0DA-4DA0-ADCA-4CC8D3B46D6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6 CodeFirst1toNOperations", "6 CodeFirst1toNOperations\6 CodeFirst1toNOperations.csproj", "{A7E6590D-6EC6-4B0E-95D9-2EF8D69DAAEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CA6E42E1-F0DA-4DA0-ADCA-4CC8D3B46D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA6E42E1-F0DA-4DA0-ADCA-4CC8D3B46D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA6E42E1-F0DA-4DA0-ADCA-4CC8D3B46D6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7E6590D-6EC6-4B0E-95D9-2EF8D69DAAEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E6590D-6EC6-4B0E-95D9-2EF8D69DAAEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E6590D-6EC6-4B0E-95D9-2EF8D69DAAEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E6590D-6EC6-4B0E-95D9-2EF8D69DAAEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
